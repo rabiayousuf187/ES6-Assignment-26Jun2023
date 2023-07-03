@@ -34,10 +34,13 @@ function ques2() {
 
 function ques3() {
     const stringsArray = ["apple", "banana", "cherry", "date", "elderberry"];
-
+    
     for (let i = 0; i < stringsArray.length; i++) {
         let firstLetter = stringsArray[i].charAt(0);
         console.log(firstLetter);
     }
+    
+}
+function ques4() {
 
 }
