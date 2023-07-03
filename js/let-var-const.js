@@ -69,3 +69,30 @@ function ques5() {
       alert(greeting); // Output: Hello, John! You are 25 years old.
       
 }
+
+function ques6() {
+    function findMaxValue(numbers) {
+        let max;
+      
+        if (numbers.length > 0) {
+          max = Math.max(...numbers);
+        }
+      
+        return max;
+      }
+      
+      let maxlength = parseInt(prompt("Enter max length of Array,\nYou want to process:"));
+      let numbersArray = 0;
+
+      if (maxlength > 0) {
+          for(maxlength ; maxlength > 0 ; maxlength-- ){
+            numbersArray.push( parseInt(prompt("Enter max length of Array,\nYou want to process:")) );
+          }
+        
+      }
+      const maxValue = findMaxValue(numbersArray);
+      console.log(maxValue); // Output: 9
+      
+      alert(greeting); // Output: Hello, John! You are 25 years old.
+      
+}
