@@ -45,11 +45,27 @@ function ques4() {
     function createAsteriskString(n) {
         const asterisk = '*';
         return asterisk.repeat(n);
+    }
+    
+    const n = parseInt(prompt("Enter number to print * N times:"));
+    const result = createAsteriskString(n);
+    console.log(result); // Output: *****
+    
+}
+
+function ques5() {
+    function createGreeting(obj) {
+        var message = "Hello, " + obj.name + "! You are " + obj.age + " years old.";
+        return message;
       }
       
-      const n = parseInt(prompt("Enter number to print * N times:"));
-      const result = createAsteriskString(n);
-      console.log(result); // Output: *****
       
-    }
+      var person = {
+        name: prompt("Enter Your Name:"),
+        age: parseInt(prompt("Enter Your Age:")),
+      };
+      
+      var greeting = createGreeting(person);
+      alert(greeting); // Output: Hello, John! You are 25 years old.
+      
 }
