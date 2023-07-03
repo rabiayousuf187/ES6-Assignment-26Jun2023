@@ -61,5 +61,20 @@ function ques3(){
 }
 
 function ques4(){
-
+  function createProductInfo(product) {
+    const { name, price, quantity } = product;
+    const productInfo = `Record of Product ${name}, having Price ${price}, with Quantity: ${quantity} has been stored in Database.`;
+    return productInfo;
+  }
+  
+  const product = { 
+    name: prompt("Enter Product Name:"),
+    price: parseInt(prompt("Enter One Piece Price:")),
+    quantity: parseInt(prompt("Enter Quantity:")),
+  };
+  
+  const productInfoString = createProductInfo(product);
+  alert(productInfoString);
+  // Output: Product: iPhone, Price: $999, Quantity: 3
+  
 }
