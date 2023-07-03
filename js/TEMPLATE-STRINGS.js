@@ -45,3 +45,17 @@ function ques2(){
   }
   
 }
+
+function ques3(){
+  function createHTMLElement(tagName, text) {
+    const htmlElement = `<${tagName}>${text}</${tagName}>`;
+    return htmlElement;
+  }
+  
+  const tagName = prompt("Enter HTML TagName,\nYou want to process:");
+  const text = prompt("Enter HTML Text,\nYou want to Display:");;
+  
+  const htmlElement = createHTMLElement(tagName, text);
+  document.write(htmlElement);
+  
+}
