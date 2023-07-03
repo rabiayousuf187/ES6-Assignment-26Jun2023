@@ -42,5 +42,13 @@ function ques3() {
     
 }
 function ques4() {
-
+    function createAsteriskString(n) {
+        const asterisk = '*';
+        return asterisk.repeat(n);
+      }
+      
+      const n = parseInt(prompt("Enter number to print * N times:"));
+      const result = createAsteriskString(n);
+      console.log(result); // Output: *****
+      
 }
