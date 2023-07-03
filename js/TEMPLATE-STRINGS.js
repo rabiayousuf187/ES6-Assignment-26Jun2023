@@ -78,3 +78,7 @@ function ques4(){
   // Output: Product: iPhone, Price: $999, Quantity: 3
   
 }
+
+function ques5(){
+
+}
