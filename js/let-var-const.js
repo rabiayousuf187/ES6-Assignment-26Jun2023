@@ -10,23 +10,24 @@ function ques1(){
 
 function ques2(){
     function sumOfSquares(numbers) {
+        // Check if the input is an array
+        if (!Array.isArray(numbers)) {
+            throw new TypeError("Input must be an array of numbers");
+        }
         let sum = 0;
       
         for (let i = 0; i < numbers.length; i++) {
           const square = numbers[i] ** 2;
           sum += square;
         }
-      
-        {
-          var additionalValue = 5;
-          sum += additionalValue;
-        }
-      
+            
         return sum;
       }
       
       const numbersArray = [1, 2, 3, 4, 5];
       const result = sumOfSquares(numbersArray);
+
+      alert(`Given Array is: ${numbersArray}\nSum of Squares of given array is ${result}`);
       console.log(result); // Output: 55
       
 }
