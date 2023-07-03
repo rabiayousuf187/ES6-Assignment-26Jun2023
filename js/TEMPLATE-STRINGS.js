@@ -59,3 +59,7 @@ function ques3(){
   document.write(htmlElement);
   
 }
+
+function ques4(){
+
+}
