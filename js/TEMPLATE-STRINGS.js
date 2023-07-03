@@ -80,5 +80,17 @@ function ques4(){
 }
 
 function ques5(){
-
+  function formatDate(date) {
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = String(date.getFullYear());
+    const formattedDate = `${day}/${month}/${year}`;
+    return formattedDate;
+  }
+  
+  const dateObject = new Date();
+  const formattedDateString = formatDate(dateObject);
+  console.log(formattedDateString);
+  // Output: Current date formatted as dd/mm/yyyy
+  
 }
