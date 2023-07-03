@@ -51,4 +51,5 @@ function ques4() {
       const result = createAsteriskString(n);
       console.log(result); // Output: *****
       
+    }
 }
