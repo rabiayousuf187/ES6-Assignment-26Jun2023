@@ -82,17 +82,18 @@ function ques6() {
       }
       
       let maxlength = parseInt(prompt("Enter max length of Array,\nYou want to process:"));
-      let numbersArray = 0;
+      let numbersArray =[];
 
       if (maxlength > 0) {
+        alert("Start Entering Arrays Elments:");
           for(maxlength ; maxlength > 0 ; maxlength-- ){
-            numbersArray.push( parseInt(prompt("Enter max length of Array,\nYou want to process:")) );
+            numbersArray.push(parseInt(prompt("Enter of Array")) );
           }
-        
+      }
+      else{
+        alert("Array Length must be Greater than 0!");
       }
       const maxValue = findMaxValue(numbersArray);
-      console.log(maxValue); // Output: 9
-      
-      alert(greeting); // Output: Hello, John! You are 25 years old.
+      alert(`Maximum Value is ${maxValue}`); // Output
       
 }
