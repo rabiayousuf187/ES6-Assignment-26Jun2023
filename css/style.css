@@ -1,0 +1,45 @@
+
+body {
+    background: #ffffff;
+}
+.heading {
+    padding: 25px 25px 10px;
+    color: rgb(0, 0, 0);
+}
+.heading h1 {
+    color: rgb(0, 0, 0);
+}
+.card {
+background: none;
+border: none;
+}
+.card-body {
+background: darkslateblue;
+border: 2px dashed whitesmoke;
+color: whitesmoke;
+border-top-right-radius: 40px;
+border-bottom-left-radius: 40px;
+text-align: center;
+}
+.d-grid gap-2 .btn-light {
+    text-align: left !important;
+    padding: 10px 15px 10px 30px;
+}
+.button.btn.btn-light {
+    width: 100%;
+    margin: 15px 0px;
+    
+}
+li.ques {
+    text-align: left !important;
+    /* padding: 15px 15px 15px 15px; */
+    margin: 0px 17px 5px;
+} 
+
+li.ques a{
+    text-decoration: none;
+    color: black;
+} 
+.sub-div{
+    padding: 15px 15px;
+}
