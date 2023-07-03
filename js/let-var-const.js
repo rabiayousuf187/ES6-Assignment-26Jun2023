@@ -89,11 +89,11 @@ function ques6() {
           for(maxlength ; maxlength > 0 ; maxlength-- ){
             numbersArray.push(parseInt(prompt("Enter of Array")) );
           }
+          const maxValue = findMaxValue(numbersArray);
+          alert(`Maximum Value is ${maxValue}`); // Output
       }
       else{
         alert("Array Length must be Greater than 0!");
       }
-      const maxValue = findMaxValue(numbersArray);
-      alert(`Maximum Value is ${maxValue}`); // Output
       
 }
