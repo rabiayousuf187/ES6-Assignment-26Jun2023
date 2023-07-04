@@ -1,0 +1,231 @@
+Assignments of ES6
+LET, VAR & CONST:
+1. The value of pi, which will not change. If you try reassigning a value declared with const, you will get an error:
+2. Write a function that takes an array of numbers and returns the sum of the squares of each number. Use let, const and var to declare variables in different scopes.
+3. Write a loop that iterates over an array of strings and prints the first letter of each string. Use let to declare a block-scoped variable inside the loop.
+4. Write a function that takes a number n and returns a string with n asterisks. Use const to declare a constant string that holds one asterisk.
+5. Write a function that takes an object with name and age properties and returns a greeting message. Use var to declare a function-scoped variable that holds the message.
+6. Write a function that takes an array of numbers and returns the maximum value. Use the spread operator (…) to pass the array elements as arguments to the Math.max function. Use let to declare a variable that holds the maximum value.
+TEMPLATE STRINGS:
+1. Write a function that takes a person’s name and age and returns a greeting message using template strings.
+2. Write a function that takes an array of numbers and returns a string with the sum and the average of the numbers using template strings.
+3. Write a function that takes a tag name and some text and returns an HTML element with that tag and text using template strings.
+4. Write a function that takes an object with name, price and quantity properties and returns a string with the product information using template strings.
+5. Write a function that takes a date object and returns a string with the date formatted as dd/mm/yyyy using template strings.
+DESTRUCTING:
+1. Write a function that takes an array of two numbers and returns their sum. Use array
+destructuring to assign the numbers to variables.
+2. Write a function that takes an object with name, age and occupation properties and
+returns a string with the person’s information. Use object destructuring to assign the
+properties to variables.
+3. Write a function that takes an array of objects with name and score properties and
+returns the name of the person with the highest score. Use array destructuring and the
+spread operator (…) to get the first element and the rest of the array.
+4. Write a function that takes an object with firstName, lastName and middleName
+properties and returns a string with the person’s initials. Use object destructuring with
+default values to assign the properties to variables.
+5. Write a function that takes an array of strings and returns an object with two properties:
+first, which is the first element of the array, and last, which is the last element of the
+array. Use array destructuring and shorthand property names to create the object.
+DEFAULT, REST & SPREAD:
+1. Write a function that takes two numbers and returns their sum. Use default parameters
+to assign 0 as the default value for both numbers.
+2. Write a function that takes any number of arguments and returns an array with all the
+arguments. Use rest parameters to collect the arguments into an array.
+3. Write a function that takes an array of numbers and returns the maximum value. Use
+spread operator to pass the array elements as arguments to Math.max function.
+4. Write a function that takes two arrays and returns a new array with the elements of
+both arrays concatenated. Use spread operator to combine the arrays.
+5. Write a function that takes an object with name, age and occupation properties and
+returns a new object with the same properties but with an additional id property. Use
+spread operator and shorthand property names to create the new object.
+ARROW FUNCTIONS:
+1. We can combine the arrow function with certain built-in methods. For example, we can
+use the foreach() method on an array. This method executes a certain function for every
+element in the array. Have a look at this example:
+2. Write an arrow function that takes a string and returns its length.
+3. Write an arrow function that takes two numbers and returns their product.
+4. Write an arrow function that takes an array of numbers and returns the average of the
+numbers.
+5. Write an arrow function that takes a name and returns a greeting message.
+6. Write an arrow function that takes no parameters and returns a random number
+between 0 and 1.
+PROMISES:
+1. Write a function that takes a number and returns a promise that resolves with the
+square of the number after 1 second.
+2. Write a function that takes an array of promises and returns a promise that resolves
+with an array of the resolved values of each promise.
+3. Write a function that takes a URL and returns a promise that fetches the data from the
+URL and parses it as JSON.
+4. Write a function that takes two promises and returns a promise that resolves with the
+sum of the resolved values of both promises.
+5. Write a function that takes a promise and a timeout in milliseconds and returns a
+promise that rejects with an error if the original promise does not resolve within the
+timeout.
+1. In this exercise, you will create a counter that will output the values in sequence
+using Promises.
+a. Set up a Promise that resolves with a value of Start Counting.
+b. Create a function named counter() that has one argument that gets the value
+and outputs it into the console.
+c. Set up the next function in the Promise with four then() instances, which
+should output a value into the counter function, and return a value which
+will provide input for the subsequent then() instance. The returned values
+should be one, then two, then three. The screen output in the console should
+be the following:
+MAP:
+1. Write a function that takes an array of numbers and returns a map that maps each
+number to its square.
+2. Write a function that takes an array of objects with name and age properties and
+returns a map that maps each name to its corresponding age.
+3. Write a function that takes a map and a key and returns a boolean value indicating
+whether the map contains the key or not.
+4. Write a function that takes a map and a callback function and returns a new map that
+contains the key-value pairs from the original map that satisfy the callback function.
+5. Write a function that takes two maps and returns a new map that contains the keyvalue
+pairs from both maps. If there are duplicate keys, the values from the second map
+should overwrite the values from the first map.
+CLASSES:
+2. Take the following steps to create a person class, and print instances of friends'
+names:
+a. Create a class for Person including the constructor for firstname and
+lastname.
+b. Create a variable and assign a value of the new Person object using your
+friend's first and last names.
+c. Now add a second variable with another friend's name using their first name
+and last name.
+d. Output both friends into the console with a greeting of hello.
+3. Write a class that represents a person with a name and an age. The class should
+have a constructor that takes the name and age as parameters, and a method that
+returns the person’s introduction.
+4. Write a class that represents a rectangle with a width and a height. The class should
+have a constructor that takes the width and height as parameters, and two methods
+that return the area and the perimeter of the rectangle.
+5. Write a class that represents a circle with a radius. The class should have a
+constructor that takes the radius as a parameter, and three methods that return the
+diameter, the circumference and the area of the circle.
+6. Write a class that inherits from the person class and represents a student with a
+name, an age and a course. The class should have a constructor that takes the name,
+age and course as parameters, and a method that overrides the person’s
+introduction to include the course.
+7. Write a class that inherits from the rectangle class and represents a square with a
+side. The class should have a constructor that takes the side as a parameter, and two
+methods that override the area and perimeter of the rectangle to use the side
+instead of the width and height.
+HOISTING:
+1. Write a function that prints the value of a variable declared with var after the function
+declaration. What will be the output?
+2. Write a function that prints the value of a variable declared with let after the function
+declaration. What will be the output?
+3. Write a function that prints the value of a variable declared with const after the function
+declaration. What will be the output?
+4. Write a function that prints the value of a variable assigned to an undeclared variable
+after the function declaration. What will be the output?
+5. Write a function that calls another function declared with a function declaration before
+the function declaration. What will be the output?
+THIS KEYWORD:
+1. Create an object called `person` with a `name` property and a `greet` method. The
+`greet` method should log a greeting message with the person's name.
+2. Create a constructor function called `Car` that has `brand` and `speed` properties.
+Add a method called `accelerate` that increases the speed of the car by a given
+value. Add a method called `print Speed` that logs the current speed of the car.
+3. Create an object called `calculator` with a `value` property and three methods: `add`,
+`subtract`, and `multiply`. Each method should take a number as a parameter and
+update the `value` property accordingly. Add a method called `printValue` that logs
+the current value.
+4. Imagine you have an object called book with properties like title, author, and pages.
+How would you define a method called printInfo that logs a message displaying the
+book's title, author, and number of pages using this keyword?
+5. You have a constructor function called Person that creates person objects with
+properties like name and age. How would you define a method called introduce that
+logs a greeting message including the person's name and age, using this keyword?
+6. Consider an object called counter with a property count and two methods:
+increment and reset. How would you define the increment method so that it
+increases the count property by 1 using this keyword?
+7. Let's say you have an object called product with properties like name, price, and
+discount. How would you define a method called calculateDiscountedPrice that
+calculates and returns the discounted price of the product using this keyword?
+8. Imagine you have a function called play which is defined inside an object called
+game. How would you call the play function from within the object using this
+keyword?
+FOR OF LOOP:
+1. Create an array called `fruits` with some fruit names. Use a `for...of` loop to iterate
+over the array and log each fruit name.
+2. Create a string called `message` with some text. Use a `for...of` loop to iterate over
+the characters of the string and log each character.
+3. Create an object called `person` with properties like `name`, `age`, and `country`.
+Use a `for...of` loop to iterate over the object and log each property value.
+4. Create an object called `person` with properties like `name`, `age`, and `country`.
+Use a `for...of` loop to iterate over the object and log each property value.
+5. Create a Set called `colors` with some color names. Use a `for...of` loop to iterate
+over the Set and log each color.
+6. This exercise will construct an array as it loops through the incrementing values of x.
+Once the array is done, this exercise also will demonstrate several ways to output
+array contents.
+a. Create an empty array
+b. Run a loop 10 times, adding a new incrementing value to the array
+c. Log the array into the console
+d. Use the for loop to iterate through the array (adjust the number of iterations
+to however many values are in your array) and output into the console
+e. Use the for of loop to output the value into the console from the array
+FOR IN LOOP:
+1. In this exercise, we will experiment with looping over objects and internal arrays.
+a. Create a simple object with three items in it.
+b. Using the for in loop, get the properties' names and values from the object
+and output them into the console.
+c. Create an array containing the same three items. Using either the for loop or
+d. the for in loop, output the values from the array into the console.
+2. Create an object called `person` with properties like `name`, `age`, and `country`.
+Use a `for...in` loop to iterate over the object and log each property name.
+3. Create an array called `numbers` with some numeric values. Use a `for...in` loop to
+iterate over the array and log each index.
+4. Create a string called `message` with some text. Use a `for...in` loop to iterate over
+the characters of the string and log each character.
+5. Create a Map called `scores` with keys as names and values as scores. Use a `for...in`
+loop to iterate over the Map and log each name and score pair.
+6. Create an object called `car` with properties like `brand`, `model`, and `year`. Use a
+`for...in` loop to iterate over the object and log each property value.
+ASYNC/AWAIT:
+1. Create a function called `delayedGreeting` that takes a `name` parameter. The
+function should use `setTimeout` to delay the greeting message by 2 seconds. Use
+`async/await` to make the function asynchronous.
+2. Create a function called `fetchData` that simulates an asynchronous API call. The
+function should return a promise that resolves with a data object after 3 seconds.
+Use `async/await` to make the function asynchronous.
+3. Create a function called `fetchUsers` that fetches a list of users from an API. The
+function should return a promise that resolves with the list of users after 4 seconds.
+Use `async/await` to make the function asynchronous.
+4. Create a function called `fetchData` that fetches data from an API based on a given
+`id`.
+5. The function should return a promise that resolves with the fetched data after 5
+seconds. Use `async/await` to make the function asynchronous.
+6. This exercise will demonstrate how to use await to wait on a Promise inside an async
+function. Using await and async, create a counter with timeout(), and increment a
+global counter value.
+a. Create a global value for a counter.
+b. Create a function that takes one argument. Return the result of a new
+Promise, setting a setTimeout() function that will contain the resolve
+instance.
+c. Increment the counter within setTimeout(), adding one every second.
+Resolve the Promise with the value of the counter and the value of the
+variable that was in the function argument.
+d. Create an asynchronous function that outputs into the console the value of
+the global counter and the value of the argument of the function.
+e. Create a variable to capture the returned resolve value from the await
+function. Output that result into the console.
+f. Create a loop to iterate 10 times, incrementing the value and invoking the
+async function, passing the value of the increment variable as the parameter
+in the function.
+CLOSURES (WITH SCOPE & ITS BENEFITS’S):
+1. Create a function called `counter` that returns another function. The returned
+function should increment a counter variable and log its value. Use a closure to keep
+track of the counter variable.
+2. Create a function called `createMultiplier` that takes a number as a parameter. The
+function should return another function that multiplies a given number by the
+number passed to `createMultiplier`. Use a closure to access the number parameter.
+3. Create a function called `secretMessage` that takes a string as a parameter. The
+function should return another function that logs the secret message along with the
+provided string. Use a closure to access the string parameter.
+4. Create a function called `calculate` that takes two numbers as parameters. The
+function should return an object with two methods: `add` and `multiply`. The `add`
+method should add the two numbers, and the `multiply` method should multiply
+them. Use a closure to access the number parameters.
