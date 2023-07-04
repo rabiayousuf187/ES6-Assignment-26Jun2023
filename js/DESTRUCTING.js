@@ -5,19 +5,12 @@ function ques1() {
         return sum;
     }
 
-    let maxlength = parseInt(prompt("Enter max length of Array,\nYou want to process:"));
-      let numbersArray =[];
-
-      if (maxlength > 0) {
-        alert("Start Entering Arrays Elments:");
-          for(maxlength ; maxlength > 0 ; maxlength-- ){
-            numbersArray.push(parseInt(prompt("Enter of Array")) );
-          }
-          const result = calculateSum(numbersArray);
-          alert(`Sum of Given Array ${numbersArray} is   ${result}`);
-        }
-      else{
-        alert("Array Length must be Greater than 0!");
-      }
+    let numbersArray = [];
+    alert("Start Entering Array 2 Elments:");
+    for (let maxlength = 2; maxlength > 0; maxlength--) {
+        numbersArray.push(parseInt(prompt("Enter of Array")));
+    }
+    const result = calculateSum(numbersArray);
+    alert(`Sum of Given Array ${numbersArray} is   ${result}`);
 
 }
