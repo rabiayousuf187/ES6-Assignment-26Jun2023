@@ -18,7 +18,7 @@ function ques1() {
 function ques2(){
     function createPersonInfo(person) {
         const { name, age, occupation } = person;
-        const personInfo = `Name: ${name}, Age: ${age}, Occupation: ${occupation}`;
+        const personInfo = `Person Name: ${name} is ${age} years old, occupation is ${occupation}`;
         return personInfo;
       }
       
@@ -29,6 +29,6 @@ function ques2(){
       };
       
       const personInfoString = createPersonInfo(person);
-      console.log(personInfoString);
+      alert(personInfoString);
       
 }
