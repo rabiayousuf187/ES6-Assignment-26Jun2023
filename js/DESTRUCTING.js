@@ -14,3 +14,21 @@ function ques1() {
     alert(`Sum of Given Array ${numbersArray} is   ${result}`);
 
 }
+
+function ques2(){
+    function createPersonInfo(person) {
+        const { name, age, occupation } = person;
+        const personInfo = `Name: ${name}, Age: ${age}, Occupation: ${occupation}`;
+        return personInfo;
+      }
+      
+      const person = {
+        name: prompt("Enter Your Name:"),
+        age: parseInt(prompt("Enter Your Age:")),
+        occupation: prompt("Enter Your Occupation:"),
+      };
+      
+      const personInfoString = createPersonInfo(person);
+      console.log(personInfoString);
+      
+}
