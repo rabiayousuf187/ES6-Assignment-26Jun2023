@@ -54,9 +54,10 @@ function ques3(){
 
       if (maxlength > 0) {
         alert("Start Entering Persons Details:");
-          for(maxlength ; maxlength > 0 ; maxlength-- ){
-              name = prompt("Enter of Name");
-              score = parseInt(prompt("Enter of Array"));
+          for(let ind = 0 ; ind < maxlength ; ind++){
+            //   console.log(`${ind+1}`);
+              name = prompt(`Enter Person${ind+1} Name`);
+              score = parseInt(prompt(`Enter Person${ind+1} Score`));
 
             peopleArray.push({ name: name, score: score },);
 
@@ -64,15 +65,11 @@ function ques3(){
           console.log("peopleArray recorded ==== ",peopleArray);
 
           let personWithHighestScore = findPersonWithHighestScore(peopleArray);
-          console.log(personWithHighestScore);
+          alert(`Person ${personWithHighestScore} has Highest Score.`);
       }
       else{
         alert("Array Length must be Greater than 0!");
       }
       
-      
-      
-     
-      // Output: Jane
-      
+
 }
