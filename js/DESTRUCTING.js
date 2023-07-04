@@ -91,3 +91,19 @@ function ques4() {
     alert(`Person Initial is   ${personInitials}`);
 
 }
+
+function ques5(){
+    function createObjectWithFirstAndLast(array) {
+        const [first,,, last] = array;
+        console.log(`last element array === after destruction ${array}`);
+
+        return `{${first},${last}}`;
+    }
+    
+    const stringsArray = ["apple", "banana", "cherry", "date"];
+    const resultObject = createObjectWithFirstAndLast(stringsArray);
+    console.log(`first and last element === after destruction ${resultObject}`);
+    alert(`Given array is:${stringsArray}\nfirst and last element is\n${resultObject}`);
+    // Output: { first: "apple", last: "date" }
+      
+}
