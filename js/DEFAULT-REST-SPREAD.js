@@ -23,3 +23,7 @@ function ques2(){
     console.log("Return Array of Colors Name Using Rest:" );
     console.log(result);
 }
+
+function ques3(){
+
+}
