@@ -12,3 +12,7 @@ function ques1() {
     alert(`Sum of ${num1} and ${num2} is   ${result}`);
 
 }
+
+function ques2(){
+    
+}
