@@ -14,5 +14,12 @@ function ques1() {
 }
 
 function ques2(){
+    function arrayReturn(...args) {
+        console.log(args);
+        return args;
+    }
     
+    const result = arrayReturn("red","blue","orange","green","yellow");
+    console.log("Return Array of Colors Name Using Rest:" );
+    console.log(result);
 }
