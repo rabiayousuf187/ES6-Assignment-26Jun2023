@@ -25,6 +25,11 @@ function ques2(){
 }
 
 function ques3(){
+    function findMaxValue(numbers) {
+        console.log("Array numbers in Max Fun. ==== ", ...numbers);
+        return Math.max(...numbers);
+      }
+      
     let maxlength = parseInt(prompt("Enter max length of Array,\nYou want to process:"));
       let numbersArray =[];
 
