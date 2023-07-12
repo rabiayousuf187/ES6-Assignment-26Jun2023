@@ -84,3 +84,26 @@ function ques4() {
     console.log("After Concatenate Arrays ==== ",newArray);
     alert(`Maximum Value is ${newArray}`); // Output
 }
+
+function ques5(){
+
+    let person = {
+        name: prompt("Enter Your Name:"),
+        age: parseInt(prompt("Enter Your Age:")),
+        occupation: prompt("Enter Your Occupation:"),
+    };
+
+    function createPersonInfo(person) {
+        const id = 1 // Assuming there's a function to generate a unique ID
+        person = {
+            ...person,
+            id
+        };
+        
+        console.log("Updated Person Object == ,",person);
+        return person;
+    }
+
+    const personInfoString = createPersonInfo(person);
+    alert("Updated Person Object == ",personInfoString);
+}
