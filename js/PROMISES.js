@@ -74,3 +74,32 @@ function ques3() {
         });
 
 }
+
+function ques4() {
+    function sumResolvedValues(promise1, promise2) {
+        return Promise.all([promise1, promise2])
+            .then((resolvedValues) => {
+                const sum = resolvedValues.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                return sum;
+            })
+            .catch((error) => {
+                // Handle any errors from either of the promises
+                console.error('Error:', error);
+                throw error;
+            });
+    }
+
+    const promise1 = Promise.resolve(5);
+    const promise2 = Promise.resolve(10);
+
+    sumResolvedValues(promise1, promise2)
+        .then((result) => {
+            console.log('Sum:', result); // Output: 15
+        })
+        .catch((error) => {
+            // Handle any errors that occurred during the promises
+            console.error('Error:', error);
+        });
+
+
+}
