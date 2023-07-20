@@ -23,3 +23,7 @@ function ques1(){
     console.log(arraySquare); // Output
       
 }
+
+function ques2(){
+    
+}
