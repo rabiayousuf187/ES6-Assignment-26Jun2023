@@ -23,3 +23,7 @@ function ques2(){
 
     alert(`String ${str} length is ${getStringLength(str)}`);
 }
+
+function ques3(){
+    
+}
