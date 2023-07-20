@@ -70,5 +70,6 @@ function ques5(){
       alert(generateGreeting(name));
 }
 function ques6(){
-    
+    const getRandomNumber = () => Math.random();
+    alert(`Random Number is ${getRandomNumber()}`);
 }
