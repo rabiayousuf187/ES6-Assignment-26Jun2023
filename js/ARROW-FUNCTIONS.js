@@ -25,5 +25,11 @@ function ques2(){
 }
 
 function ques3(){
-    
+    alert(`Product of 2 Numbers:`);
+    let num1 = parseInt(prompt("Enter Number 1:"));
+    let num2 = parseInt(prompt("Enter Number 2:"));
+
+    const multiply = (num1, num2) => num1 * num2;
+
+    alert(`Product of ${num1} and ${num2} is ${multiply(num1 , num2)}`);
 }
