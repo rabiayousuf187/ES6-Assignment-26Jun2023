@@ -60,3 +60,7 @@ function ques4(){
 
     alert("Average of Array "+ numbersArray + " is " + calculateAverage(numbersArray));
 }
+
+function ques5(){
+    
+}
