@@ -50,3 +50,7 @@ function ques2(){
 
     console.log(mapNamesToAges(person));
 }
+
+function ques3(){
+    
+}
