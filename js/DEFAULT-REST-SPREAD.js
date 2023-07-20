@@ -86,7 +86,6 @@ function ques4() {
 }
 
 function ques5(){
-
     let person = {
         name: prompt("Enter Your Name:"),
         age: parseInt(prompt("Enter Your Age:")),
@@ -105,5 +104,5 @@ function ques5(){
     }
 
     const personInfoString = createPersonInfo(person);
-    alert("Updated Person Object == ",personInfoString);
+    console.log("Updated Person Object == ",personInfoString);
 }
