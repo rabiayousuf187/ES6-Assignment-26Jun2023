@@ -85,3 +85,7 @@ function ques3(){
     console.log(`key = ${mapContainsKey(mapNamesToAges(person), key)}`);
 
 }
+
+function ques4(){
+    
+}
