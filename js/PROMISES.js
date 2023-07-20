@@ -105,5 +105,27 @@ function ques4() {
 }
 
 function ques5(){
-    
+    function promiseWithTimeout(promise, timeout) {
+        return Promise.race([
+          promise,
+          new Promise((_, reject) => {
+            setTimeout(() => {
+              reject(new Error('Promise timed out'));
+            }, timeout);
+          })
+        ]);
+      }
+
+      const originalPromise = new Promise((resolve) => {
+        setTimeout(() => resolve('Original promise resolved'), 2000);
+      });
+      
+      promiseWithTimeout(originalPromise, 1500)
+        .then((result) => {
+          console.log('Success:', result);
+        })
+        .catch((error) => {
+          console.error('Error:', error.message); // Output: Error: Promise timed out
+        });
+      
 }
