@@ -69,3 +69,6 @@ function ques5(){
  
       alert(generateGreeting(name));
 }
+function ques6(){
+    
+}
