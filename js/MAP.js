@@ -87,5 +87,39 @@ function ques3(){
 }
 
 function ques4(){
-    
+    // Create an empty Map
+const myMap = new Map();
+
+// Add key-value pairs to the Map
+myMap.set("name", "John");
+myMap.set("age", 30);
+myMap.set("country", "USA");
+
+// Get the value using a key
+const name = myMap.get("name");
+console.log(name); // Output: "John"
+
+// Check if a key exists in the Map
+const hasCountry = myMap.has("country");
+console.log(hasCountry); // Output: true
+
+// Get the number of key-value pairs in the Map
+const size = myMap.size;
+console.log(size); // Output: 3
+
+// Delete a key-value pair from the Map
+myMap.delete("age");
+
+// Clear all key-value pairs from the Map
+myMap.clear();
+
+// You can also create a Map with initial key-value pairs using an array of arrays
+const initialMap = new Map([
+  ["name", "Alice"],
+  ["age", 25],
+  ["country", "Canada"],
+]);
+
+console.log(initialMap); // Output: Map(3) { 'name' => 'Alice', 'age' => 25, 'country' => 'Canada' }
+
 }
