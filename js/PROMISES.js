@@ -104,28 +104,69 @@ function ques4() {
 
 }
 
-function ques5(){
+function ques5() {
     function promiseWithTimeout(promise, timeout) {
         return Promise.race([
-          promise,
-          new Promise((_, reject) => {
-            setTimeout(() => {
-              reject(new Error('Promise timed out'));
-            }, timeout);
-          })
+            promise,
+            new Promise((_, reject) => {
+                setTimeout(() => {
+                    reject(new Error('Promise timed out'));
+                }, timeout);
+            })
         ]);
-      }
+    }
 
-      const originalPromise = new Promise((resolve) => {
+    const originalPromise = new Promise((resolve) => {
         setTimeout(() => resolve('Original promise resolved'), 2000);
-      });
-      
-      promiseWithTimeout(originalPromise, 1500)
+    });
+
+    promiseWithTimeout(originalPromise, 1500)
         .then((result) => {
-          console.log('Success:', result);
+            console.log('Success:', result);
         })
         .catch((error) => {
-          console.error('Error:', error.message); // Output: Error: Promise timed out
+            console.error('Error:', error.message); // Output: Error: Promise timed out
         });
-      
+
+}
+
+function ques6() {
+    /**
+ * This function takes a value and logs it to the console.
+ * @param {any} value - The value to be logged.
+ */
+    function counter(value) {
+        console.log(value);
+    }
+
+    // Create a new Promise that resolves with a value of "Start Counting"
+    let promise = new Promise(function (resolve, reject) {
+        resolve("Start Counting");
+    });
+
+    // Set up the next function in the Promise with four then() instances
+    promise
+        .then(counter) // Output "Start Counting"
+        .then(function () {
+            return new Promise(function (resolve, reject) {
+                resolve("one");
+            });
+        })
+        .then(counter) // Output "one"
+        .then(function () {
+            return new Promise(function (resolve, reject) {
+                resolve("two");
+            });
+        })
+        .then(counter) // Output "two"
+        .then(function () {
+            return new Promise(function (resolve, reject) {
+                resolve("three");
+            });
+        })
+        .then(counter) // Output "three"
+        .catch(function (error) {
+            // Log any errors that occur
+            console.error("An error occurred:", error);
+        });
 }
