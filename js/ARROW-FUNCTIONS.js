@@ -62,5 +62,10 @@ function ques4(){
 }
 
 function ques5(){
-    
+    let name = prompt("Enter Your Name:")
+    const generateGreeting = (name) => {
+        return `Hello, ${name}! Welcome to our website.`;
+      };
+ 
+      alert(generateGreeting(name));
 }
