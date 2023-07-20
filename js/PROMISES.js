@@ -44,3 +44,7 @@ function ques2() {
     }
 
 }
+
+function ques3(){
+    
+}
