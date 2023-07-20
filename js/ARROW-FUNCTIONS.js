@@ -18,5 +18,8 @@ function ques1(){
 }
 
 function ques2(){
+    let str = prompt("Enter String to Check Length:")
+    const getStringLength = (str) => str.length;
 
+    alert(`String ${str} length is ${getStringLength(str)}`);
 }
