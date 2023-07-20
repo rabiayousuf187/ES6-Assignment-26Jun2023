@@ -45,6 +45,32 @@ function ques2() {
 
 }
 
-function ques3(){
-    
+function ques3() {
+    function fetchAndParseJSON(url) {
+        return fetch(url)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .catch((error) => {
+                // Handle any errors during fetch or JSON parsing
+                console.error('Error:', error);
+                throw error;
+            });
+    }
+
+    // const apiUrl = 'https://jsonplaceholder.typicode.com/posts/1'; // Example URL
+    const apiUrl = 'https://dummyjson.com/products/1'; // Example URL
+
+    fetchAndParseJSON(apiUrl)
+        .then((jsonData) => {
+            console.log(jsonData); // The parsed JSON data
+        })
+        .catch((error) => {
+            // Handle any errors that occurred during the fetch or JSON parsing
+            console.error('Error:', error);
+        });
+
 }
