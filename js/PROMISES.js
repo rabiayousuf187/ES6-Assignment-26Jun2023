@@ -22,3 +22,7 @@ function ques1() {
             console.error('Error:', error.message);
         });
 }
+
+function ques2(){
+    
+}
