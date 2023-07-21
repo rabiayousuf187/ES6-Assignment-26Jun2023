@@ -133,6 +133,5 @@ function ques5(){
       ]);
       
       const mergedMap = mergeMaps(map1, map2);
-      console.log(mergedMap); // Output: Map(3) { 'a' => 1, 'b' => 3, 'c' => 4 }
-      
+      console.log(mergedMap); // Output: Map(3) { 'a' => 1, 'b' => 3, 'c' => 4, 'd' => 5 } 
 }
