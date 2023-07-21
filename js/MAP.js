@@ -129,6 +129,7 @@ function ques5(){
       const map2 = new Map([
         ["b", 3],
         ["c", 4],
+        ["d", 5],
       ]);
       
       const mergedMap = mergeMaps(map1, map2);
