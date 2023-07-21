@@ -114,3 +114,24 @@ function ques4(){
       const filteredMap = filterMapByCallback(originalMap, isEvenNumber);
       console.log(filteredMap); // Output: Map(2) { 'b' => 2, 'd' => 4 }
 }
+
+function ques5(){
+    function mergeMaps(map1, map2) {
+        const mergedMap = new Map([...map1, ...map2]);
+        return mergedMap;
+      }
+      
+    const map1 = new Map([
+        ["a", 1],
+        ["b", 2],
+      ]);
+      
+      const map2 = new Map([
+        ["b", 3],
+        ["c", 4],
+      ]);
+      
+      const mergedMap = mergeMaps(map1, map2);
+      console.log(mergedMap); // Output: Map(3) { 'a' => 1, 'b' => 3, 'c' => 4 }
+      
+}
