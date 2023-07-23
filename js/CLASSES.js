@@ -79,3 +79,7 @@ function ques4(){
   console.log(greetingMessage); // Output: "Hello, my name is John and I am 30 years old."
   
 }
+
+function ques5(){
+  
+}
