@@ -59,3 +59,7 @@ function ques3(){
   console.log(asterisksString); // Output: "*****"
   
 }
+
+function ques4(){
+  
+}
