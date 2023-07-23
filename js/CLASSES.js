@@ -15,3 +15,7 @@ function ques1() {
   console.log(`Hello, ${friend1.firstname} ${friend1.lastname}!`);
   console.log(`Hello, ${friend2.firstname} ${friend2.lastname}!`);
 }
+
+function ques2(){
+  
+}
