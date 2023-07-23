@@ -17,5 +17,22 @@ function ques1() {
 }
 
 function ques2(){
+  class StringProcessor {
+    constructor(strings) {
+      this.strings = strings;
+    }
+  
+    printFirstLetters() {
+      for (let i = 0; i < this.strings.length; i++) {
+        let firstLetter = this.strings[i].charAt(0);
+        console.log(firstLetter);
+      }
+    }
+  }
+  
+  // Example usage:
+  const myStrings = ['apple', 'banana', 'cherry', 'date'];
+  const processor = new StringProcessor(myStrings);
+  processor.printFirstLetters();
   
 }
