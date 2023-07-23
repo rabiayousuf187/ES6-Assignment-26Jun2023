@@ -36,3 +36,7 @@ function ques2(){
   processor.printFirstLetters();
   
 }
+
+function ques3(){
+  
+}
