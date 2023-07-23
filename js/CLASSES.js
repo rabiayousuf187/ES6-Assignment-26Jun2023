@@ -38,5 +38,24 @@ function ques2(){
 }
 
 function ques3(){
+  class AsteriskGenerator {
+    constructor() {
+      this.asterisk = '*';
+    }
+  
+    generateAsterisks(n) {
+      let result = '';
+      for (let i = 0; i < n; i++) {
+        result += this.asterisk;
+      }
+      return result;
+    }
+  }
+  
+  // Example usage:
+  const asteriskGenerator = new AsteriskGenerator();
+  const numberOfAsterisks = parseInt(prompt("Enter Number to Print N Times *:"));
+  const asterisksString = asteriskGenerator.generateAsterisks(numberOfAsterisks);
+  console.log(asterisksString); // Output: "*****"
   
 }
