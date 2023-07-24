@@ -81,22 +81,6 @@ function ques3(){
 }
 
 function ques4(){
-  class GreetingGenerator {
-    constructor() {
-      this.greetingMessage = '';
-    }
-  
-    generateGreeting(person) {
-      this.greetingMessage = `Hello, my name is ${person.name} and I am ${person.age} years old.`;
-      return this.greetingMessage;
-    }
-  }
-  
-  // Example usage:
-  const greetingGenerator = new GreetingGenerator();
-  const personInfo = { name: 'John', age: 30 };
-  const greetingMessage = greetingGenerator.generateGreeting(personInfo);
-  console.log(greetingMessage); // Output: "Hello, my name is John and I am 30 years old."
   
 }
 
