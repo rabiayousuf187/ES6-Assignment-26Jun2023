@@ -149,3 +149,7 @@ function ques5(){
   const student = new Student("John", 20, "Computer Science");
   console.log(student.introduction()); // Output: "My name is John and I am 20 years old. I am studying Computer Science."
 }
+
+function ques6(){
+  
+}
