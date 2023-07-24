@@ -81,7 +81,45 @@ function ques3(){
 }
 
 function ques4(){
+  class Circle {
+    constructor(radius) {
+      /**
+       * Represents a circle with a given radius.
+       * @param {number} radius - The radius of the circle.
+       */
+      this.radius = radius;
+    }
   
+    getDiameter() {
+      /**
+       * Calculates and returns the diameter of the circle.
+       * @returns {number} The diameter of the circle.
+       */
+      return 2 * this.radius;
+    }
+  
+    getCircumference() {
+      /**
+       * Calculates and returns the circumference of the circle.
+       * @returns {number} The circumference of the circle.
+       */
+      return 2 * Math.PI * this.radius;
+    }
+  
+    getArea() {
+      /**
+       * Calculates and returns the area of the circle.
+       * @returns {number} The area of the circle.
+       */
+      return Math.PI * this.radius ** 2;
+    }
+  }
+  
+  // Example usage:
+  const circle = new Circle(5);
+  console.log("Diameter of Circle: ",circle.getDiameter()); // Output: 10
+  console.log("Circumference of Circle: ",circle.getCircumference()); // Output: 31.41592653589793
+  console.log("Area of Circle: ",circle.getArea()); // Output: 78.53981633974483
 }
 
 function ques5(){
