@@ -123,5 +123,29 @@ function ques4(){
 }
 
 function ques5(){
+  class Person {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
   
+    introduction() {
+      return `My name is ${this.name} and I am ${this.age} years old.`;
+    }
+  }
+  
+  class Student extends Person {
+    constructor(name, age, course) {
+      super(name, age);
+      this.course = course;
+    }
+  
+    introduction() {
+      return `${super.introduction()} I am studying ${this.course}.`;
+    }
+  }
+  
+  // Example usage
+  const student = new Student("John", 20, "Computer Science");
+  console.log(student.introduction()); // Output: "My name is John and I am 20 years old. I am studying Computer Science."
 }
