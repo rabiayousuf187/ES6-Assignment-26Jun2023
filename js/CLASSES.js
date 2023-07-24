@@ -46,7 +46,38 @@ function ques2(){
 }
 
 function ques3(){
+  class Rectangle {
+    /**
+     * Represents a rectangle with a width and a height.
+     * @param {number} width - The width of the rectangle.
+     * @param {number} height - The height of the rectangle.
+     */
+    constructor(width, height) {
+      this.width = width;
+      this.height = height;
+    }
   
+    /**
+     * Calculates and returns the area of the rectangle.
+     * @returns {number} The area of the rectangle.
+     */
+    calculateArea() {
+      return this.width * this.height;
+    }
+  
+    /**
+     * Calculates and returns the perimeter of the rectangle.
+     * @returns {number} The perimeter of the rectangle.
+     */
+    calculatePerimeter() {
+      return 2 * (this.width + this.height);
+    }
+  }
+  
+  // Example usage:
+  const rectangle = new Rectangle(5, 10);
+  console.log(rectangle.calculateArea()); // Output: 50
+  console.log(rectangle.calculatePerimeter()); // Output: 30
 }
 
 function ques4(){
