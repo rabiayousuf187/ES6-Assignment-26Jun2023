@@ -17,23 +17,31 @@ function ques1() {
 }
 
 function ques2(){
-  class StringProcessor {
-    constructor(strings) {
-      this.strings = strings;
+  class Person {
+    constructor(name, age) {
+      /**
+       * Represents a person with a name and an age.
+       *
+       * @param {string} name - The name of the person.
+       * @param {number} age - The age of the person.
+       */
+      this.name = name;
+      this.age = age;
     }
   
-    printFirstLetters() {
-      for (let i = 0; i < this.strings.length; i++) {
-        let firstLetter = this.strings[i].charAt(0);
-        console.log(firstLetter);
-      }
+    introduce() {
+      /**
+       * Returns the person's introduction.
+       *
+       * @returns {string} The person's introduction.
+       */
+      return `Hi, my name is ${this.name} and I am ${this.age} years old.`;
     }
   }
   
-  // Example usage:
-  const myStrings = ['apple', 'banana', 'cherry', 'date'];
-  const processor = new StringProcessor(myStrings);
-  processor.printFirstLetters();
+  // Example usage
+  const person = new Person("John", 25);
+  console.log(person.introduce()); // Output: Hi, my name is John and I am 25 years old.
   
 }
 
