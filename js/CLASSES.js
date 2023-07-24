@@ -76,8 +76,8 @@ function ques3(){
   
   // Example usage:
   const rectangle = new Rectangle(5, 10);
-  console.log(rectangle.calculateArea()); // Output: 50
-  console.log(rectangle.calculatePerimeter()); // Output: 30
+  console.log("Area of Rectangle: ",rectangle.calculateArea()); // Output: 50
+  console.log("Perimeter of Rectangle: ",rectangle.calculatePerimeter()); // Output: 30
 }
 
 function ques4(){
