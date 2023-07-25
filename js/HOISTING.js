@@ -25,3 +25,7 @@ function ques3(){
     
     printVariable(); // Output: "Hello, World!"
 }
+
+function ques4(){
+    
+}
