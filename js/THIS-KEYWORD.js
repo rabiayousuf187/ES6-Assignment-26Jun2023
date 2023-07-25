@@ -101,6 +101,19 @@ function ques4() {
     book.printInfo();
 }
 
-function ques5(){
-    
+function ques5() {
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        introduce() {
+            console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+        }
+    }
+
+    // Example usage
+    const person1 = new Person("John", 25);
+    person1.introduce(); // Output: Hello, my name is John and I am 25 years old.
 }
