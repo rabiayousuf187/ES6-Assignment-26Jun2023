@@ -118,6 +118,28 @@ function ques5() {
     person1.introduce(); // Output: Hello, my name is John and I am 25 years old.
 }
 
-function ques6(){
-    
+function ques6() {
+    // Define an object called counter
+    const counter = {
+        count: 0, // Initialize the count property to 0
+
+        // Define the increment method using arrow function and the 'this' keyword
+        increment: function () {
+            this.count++; // Increment the count property by 1 using 'this' keyword
+        },
+
+        // Define the reset method using arrow function and the 'this' keyword
+        reset: function () {
+            this.count = 0; // Reset the count property to 0 using 'this' keyword
+        }
+    };
+
+    // Example usage
+    console.log(counter.count); // Output: 0
+
+    counter.increment();
+    console.log(counter.count); // Output: 1
+
+    counter.reset();
+    console.log(counter.count); // Output: 0
 }
