@@ -151,5 +151,42 @@ function ques5(){
 }
 
 function ques6(){
+  class Rectangle {
+    constructor(width, height) {
+      this.width = width;
+      this.height = height;
+    }
   
+    area() {
+      return this.width * this.height;
+    }
+  
+    perimeter() {
+      return 2 * (this.width + this.height);
+    }
+  }
+  
+  class Square extends Rectangle {
+    constructor(side) {
+      super(side, side);
+      this.side = side;
+    }
+  
+    area() {
+      return this.side * this.side;
+    }
+  
+    perimeter() {
+      return 4 * this.side;
+    }
+  }
+  
+  // Example usage
+  const rectangle = new Rectangle(5, 10);
+  console.log("Area of Rectangle: ",rectangle.area()); // Output: 50
+  console.log("Perimeter of Rectangle: ",rectangle.perimeter()); // Output: 30
+  
+  const square = new Square(5);
+  console.log("Area of Square: ",square.area()); // Output: 25
+  console.log("Perimeter of Square: ",square.perimeter()); // Output: 20
 }
