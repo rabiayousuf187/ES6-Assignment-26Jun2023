@@ -11,3 +11,7 @@ const person = {
   // Call the greet method
   person.greet();
 }
+
+function ques2(){
+    
+}
