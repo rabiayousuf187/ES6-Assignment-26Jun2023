@@ -100,3 +100,7 @@ function ques4() {
     // Call the printInfo method to log the book's information
     book.printInfo();
 }
+
+function ques5(){
+    
+}
