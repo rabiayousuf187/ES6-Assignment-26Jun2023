@@ -77,6 +77,26 @@ function ques3() {
     calculator.printValue(); // Output: Current value: 9
 }
 
-function ques4(){
-    
+function ques4() {
+    // Define a class called Book
+    class Book {
+        constructor(title, author, pages) {
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+        }
+
+        // Define a method called printInfo using the "this" keyword
+        printInfo() {
+            console.log(`Title: ${this.title}`);
+            console.log(`Author: ${this.author}`);
+            console.log(`Pages: ${this.pages}`);
+        }
+    }
+
+    // Create an instance of the Book class
+    const book = new Book("The Great Gatsby", "F. Scott Fitzgerald", 218);
+
+    // Call the printInfo method to log the book's information
+    book.printInfo();
 }
