@@ -117,3 +117,7 @@ function ques5() {
     const person1 = new Person("John", 25);
     person1.introduce(); // Output: Hello, my name is John and I am 25 years old.
 }
+
+function ques6(){
+    
+}
