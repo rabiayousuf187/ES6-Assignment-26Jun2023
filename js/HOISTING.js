@@ -35,6 +35,17 @@ function ques4() {
 
 }
 
-function ques5(){
+function ques5() {
     
+    // Function declaration
+    function foo() {
+        return "Hello from foo!";
+    }
+    // Function that calls foo()
+    function bar() {
+        return foo();
+    }
+
+    // Call bar() to execute the functions
+    console.log(bar());
 }
