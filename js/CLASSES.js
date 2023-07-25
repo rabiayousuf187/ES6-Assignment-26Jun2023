@@ -189,4 +189,4 @@ function ques6(){
   const square = new Square(5);
   console.log("Area of Square: ",square.area()); // Output: 25
   console.log("Perimeter of Square: ",square.perimeter()); // Output: 20
-}
+} 
