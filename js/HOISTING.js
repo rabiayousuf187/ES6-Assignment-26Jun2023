@@ -34,3 +34,7 @@ function ques4() {
     printUndeclaredVariable(); // Output: ReferenceError: undeclaredVariable is not defined
 
 }
+
+function ques5(){
+    
+}
