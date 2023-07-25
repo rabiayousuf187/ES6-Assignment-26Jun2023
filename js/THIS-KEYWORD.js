@@ -34,3 +34,7 @@ function ques2(){
       myCar.accelerate(40);
       myCar.printSpeed(); // Output: Current speed of the Toyota car is 100 km/h.
 }
+
+function ques3(){
+    
+}
