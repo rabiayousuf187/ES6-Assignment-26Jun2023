@@ -144,6 +144,18 @@ function ques6() {
     console.log(counter.count); // Output: 0
 }
 
-function ques7(){
-    
+function ques7() {
+    const product = {
+        name: 'Example Product',
+        price: 100,
+        discount: 20,
+        calculateDiscountedPrice() {
+            // Calculate the discounted price using the this keyword
+            const discountedPrice = this.price - (this.price * this.discount / 100);
+            return discountedPrice;
+        }
+    };
+
+    // Example usage
+    console.log(product.calculateDiscountedPrice()); // Output: 80
 }
