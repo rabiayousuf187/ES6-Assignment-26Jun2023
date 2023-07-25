@@ -160,6 +160,19 @@ function ques7() {
     console.log(product.calculateDiscountedPrice()); // Output: 80
 }
 
-function ques8(){
-    
+function ques8() {
+    const game = {
+        play() {
+            // Implementation of the play function
+            console.log("Playing the game");
+        },
+
+        callPlay() {
+            // Call the play function using the this keyword
+            this.play();
+        }
+    };
+
+    // Call the callPlay function to invoke the play function within the game object
+    game.callPlay();
 }
