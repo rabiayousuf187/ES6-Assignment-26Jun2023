@@ -159,3 +159,7 @@ function ques7() {
     // Example usage
     console.log(product.calculateDiscountedPrice()); // Output: 80
 }
+
+function ques8(){
+    
+}
