@@ -6,3 +6,12 @@ function ques1(){
     
     printVariable();
 }
+
+function ques2(){
+    function printVariable() {
+        console.log(variable);
+        var variable = "Hello, world!";
+    }
+    
+    printVariable();
+}
