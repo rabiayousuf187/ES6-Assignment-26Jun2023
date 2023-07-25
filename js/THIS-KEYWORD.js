@@ -143,3 +143,7 @@ function ques6() {
     counter.reset();
     console.log(counter.count); // Output: 0
 }
+
+function ques7(){
+    
+}
