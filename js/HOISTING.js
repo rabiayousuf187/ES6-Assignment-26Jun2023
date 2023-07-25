@@ -15,3 +15,7 @@ function ques2(){
     
     printVariable();
 }
+
+function ques3(){
+    
+}
