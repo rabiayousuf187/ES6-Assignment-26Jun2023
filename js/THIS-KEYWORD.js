@@ -76,3 +76,7 @@ function ques3() {
     calculator.multiply(3);
     calculator.printValue(); // Output: Current value: 9
 }
+
+function ques4(){
+    
+}
