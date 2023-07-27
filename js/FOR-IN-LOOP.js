@@ -77,3 +77,17 @@ function ques5() {
         console.log(`Name: ${name}, Score: ${score}`);
     }
 }
+
+function ques6() {
+    const car = {
+        brand: 'Toyota',
+        model: 'Camry',
+        year: 2021
+    };
+
+    for (const key in car) {
+        if (car.hasOwnProperty(key)) {
+            console.log(`${key}: ${car[key]}`);
+        }
+    }
+}
