@@ -210,7 +210,6 @@ function ques6() {
             console.log("Returned Result:", result);
         }
     }
-
     // Call the main function
     main();
 }
