@@ -13,4 +13,8 @@ function ques1() {
             console.log(`${key}: ${myObject[key]}`);
         }
     }
+
+    // Step 3: Create an array containing the same three items
+    const myArray = ["John Doe", 30, "Engineer"];
+
 }
