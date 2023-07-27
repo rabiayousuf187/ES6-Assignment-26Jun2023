@@ -65,4 +65,9 @@ function ques5() {
 function ques6() {
     // Step 1: Create an empty array
     const myArray = [];
+
+    // Step 2: Run a loop 10 times, adding new incrementing values to the array
+    for (let x = 1; x <= 10; x++) {
+        myArray.push(x);
+    }
 }
