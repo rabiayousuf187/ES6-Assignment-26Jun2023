@@ -24,3 +24,19 @@ function ques1() {
     }
 
 }
+
+function ques2() {
+    // Step 1: Create the person object
+    const person = {
+        name: "John Doe",
+        age: 30,
+        country: "United States",
+    };
+
+    // Step 2: Use the for in loop to iterate over the object and log each property name
+    console.log("Properties of the 'person' object:");
+    for (const property in person) {
+        console.log(property);
+    }
+
+}
