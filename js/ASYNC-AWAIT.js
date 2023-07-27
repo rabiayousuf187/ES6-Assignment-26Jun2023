@@ -178,6 +178,7 @@ function ques5() {
 
 }
 
-function ques6(){
-    
+function ques6() {
+    // Step 1: Create a global value for the counter
+    let globalCounter = 0;
 }
