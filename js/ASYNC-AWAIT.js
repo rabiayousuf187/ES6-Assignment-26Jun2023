@@ -196,6 +196,7 @@ function ques6() {
     // Step 3: Create an asynchronous function to output values to the console
     async function outputValues(value) {
         const result = await counterWithTimeout(value);
+        
         console.log("Global Counter:", result.globalCounter);
         console.log("Function Argument:", result.value);
         return result;
