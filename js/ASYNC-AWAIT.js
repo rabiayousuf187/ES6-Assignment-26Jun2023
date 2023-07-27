@@ -23,3 +23,7 @@ function ques1() {
 
     greet();
 }
+
+function ques2(){
+    
+}
