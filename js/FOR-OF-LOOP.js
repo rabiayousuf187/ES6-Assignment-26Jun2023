@@ -80,4 +80,11 @@ function ques6() {
         console.log(myArray[i]);
     }
 
+
+    // Step 5: Use the for of loop to output the values from the array
+    console.log("Using for of loop:");
+    for (const value of myArray) {
+        console.log(value);
+    }
+
 }
