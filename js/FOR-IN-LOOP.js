@@ -41,6 +41,14 @@ function ques2() {
 
 }
 
-function ques3(){
-    
+function ques3() {
+    // Step 1: Create the numbers array with some numeric values
+    const numbers = [1, 2, 3, 4, 5];
+
+    // Step 2: Use the for...in loop to iterate over the array and log each index
+    console.log("Indices of the 'numbers' array using for...in loop:");
+    for (const index in numbers) {
+        console.log(parseInt(index)); // Convert index to a number using parseInt
+    }
+
 }
