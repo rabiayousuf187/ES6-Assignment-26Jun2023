@@ -7,3 +7,6 @@ function ques1() {
         console.log(fruit);
     }
 }
+
+function ques2(){
+    
