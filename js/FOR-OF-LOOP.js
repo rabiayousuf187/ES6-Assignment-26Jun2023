@@ -73,4 +73,11 @@ function ques6() {
 
     // Step 3: Log the array into the console
     console.log("Array contents:", myArray);
+
+    // Step 4: Use the for loop to iterate through the array and output its contents
+    console.log("Using for loop:");
+    for (let i = 0; i < myArray.length; i++) {
+        console.log(myArray[i]);
+    }
+
 }
