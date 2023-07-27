@@ -54,6 +54,43 @@ function ques2() {
 
 }
 
-function ques3(){
-    
+function ques3() {
+    // Simulated API call to fetch users
+    function fetchUsersFromAPI() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                const users = [
+                    { id: 1, name: "John Doe" },
+                    { id: 2, name: "Jane Smith" },
+                    { id: 3, name: "Bob Johnson" },
+                ];
+                resolve(users);
+            }, 4000); // Simulate a 4-second delay
+        });
+    }
+
+    // Function to fetch users using async/await
+    async function fetchUsers() {
+        try {
+            console.log("Fetching users...");
+            const users = await fetchUsersFromAPI();
+            console.log("Users fetched:", users);
+            return users;
+        } catch (error) {
+            console.error("Error fetching users:", error);
+            throw error;
+        }
+    }
+
+    // Example of using the fetchUsers function
+    fetchUsers()
+        .then((users) => {
+            // Do something with the fetched users
+            console.log("Handling the fetched users:", users);
+        })
+        .catch((error) => {
+            // Handle any errors that occurred during the fetch
+            console.error("Error in the promise chain:", error);
+        });
+
 }
