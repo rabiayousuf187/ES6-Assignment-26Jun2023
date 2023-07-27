@@ -75,14 +75,14 @@ function ques6() {
     console.log("Array contents:", myArray);
 
     // Step 4: Use the for loop to iterate through the array and output its contents
-    console.log("Using for loop:");
+    console.log(`Using "for" loop:`);
     for (let i = 0; i < myArray.length; i++) {
         console.log(myArray[i]);
     }
 
 
     // Step 5: Use the for of loop to output the values from the array
-    console.log("Using for of loop:");
+    console.log(`Using "for of" loop:`);
     for (const value of myArray) {
         console.log(value);
     }
