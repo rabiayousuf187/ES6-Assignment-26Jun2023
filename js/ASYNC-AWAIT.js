@@ -136,6 +136,44 @@ function ques4() {
 
 }
 
-function ques5(){
-    
+function ques5() {
+    // Simulated API call with a 5-second delay
+    function fetchDataFromAPI(id) {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                const data = {
+                    id: id,
+                    message: `Data fetched for ID ${id}`,
+                    timestamp: new Date().toISOString(),
+                };
+                resolve(data);
+            }, 5000); // Simulate a 5-second delay
+        });
+    }
+
+    // Function to fetch data using async/await
+    async function fetchData(id) {
+        try {
+            console.log(`Fetching data with ID ${id}...`);
+            const data = await fetchDataFromAPI(id);
+            console.log("Data fetched successfully:", data);
+            return data;
+        } catch (error) {
+            console.error("Error fetching data:", error);
+            throw error;
+        }
+    }
+
+    // Example of using the fetchData function with a specific ID
+    const exampleId = 123;
+    fetchData(exampleId)
+        .then((data) => {
+            // Handle the fetched data
+            console.log("Handling the fetched data:", data);
+        })
+        .catch((error) => {
+            // Handle any errors that occurred during the fetch
+            console.error("Error in the promise chain:", error);
+        });
+
 }
