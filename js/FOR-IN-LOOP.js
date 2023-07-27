@@ -53,6 +53,14 @@ function ques3() {
 
 }
 
-function ques4(){
-    
+function ques4() {
+    // Step 1: Create the string called 'message' with some text
+    const message = "Hello, World!";
+
+    // Step 2: Use the for...in loop to iterate over the characters of the string and log each character
+    console.log("Characters of the 'message' string using for...in loop:");
+    for (const index in message) {
+        console.log(message[index]);
+    }
+
 }
