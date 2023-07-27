@@ -52,3 +52,7 @@ function ques3() {
     }
 
 }
+
+function ques4(){
+    
+}
