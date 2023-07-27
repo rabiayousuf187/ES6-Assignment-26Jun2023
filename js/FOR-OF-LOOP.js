@@ -70,4 +70,7 @@ function ques6() {
     for (let x = 1; x <= 10; x++) {
         myArray.push(x);
     }
+
+    // Step 3: Log the array into the console
+    console.log("Array contents:", myArray);
 }
