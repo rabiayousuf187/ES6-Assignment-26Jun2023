@@ -186,10 +186,18 @@ function ques6() {
     function counterWithTimeout(value) {
         return new Promise((resolve) => {
             setTimeout(() => {
-               
+
                 globalCounter++; // Increment the global counter every second
                 resolve({ globalCounter, value });
             }, 1000);
         });
+    }
+
+    // Step 3: Create an asynchronous function to output values to the console
+    async function outputValues(value) {
+        const result = await counterWithTimeout(value);
+        console.log("Global Counter:", result.globalCounter);
+        console.log("Function Argument:", result.value);
+        return result;
     }
 }
