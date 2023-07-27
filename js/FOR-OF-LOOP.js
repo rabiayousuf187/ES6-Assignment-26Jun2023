@@ -52,6 +52,6 @@ function ques3() {
     }
 }
 
-function ques5(){
-    
-}
+// function ques5(){
+
+// }
