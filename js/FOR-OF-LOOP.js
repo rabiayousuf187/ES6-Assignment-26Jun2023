@@ -8,20 +8,20 @@ function ques1() {
     }
 }
 
-function ques2(){
+function ques2() {
     function logCharacters(message) {
         /**
          * This function takes a string as input and logs each character using a for...of loop.
          * 
          * @param {string} message - The input string
          */
-        
+
         try {
             // Check if the input is a string
             if (typeof message !== 'string') {
                 throw new TypeError('Input must be a string');
             }
-            
+
             // Iterate over each character of the string using a for...of loop
             for (let char of message) {
                 console.log(char);
@@ -31,13 +31,23 @@ function ques2(){
             console.error('Error:', error.message);
         }
     }
-    
+
     // Example usage
     const message = 'Hello, world!';
     console.log(`Actual Text is: ${message}`);
     logCharacters(message);
 }
 
-function ques3(){
-    
+function ques3() {
+    // Create an object called `person` with properties like `name`, `age`, and `country`.
+    const person = {
+        name: 'John',
+        age: 25,
+        country: 'USA'
+    };
+
+    // Use a `for...of` loop to iterate over the object and log each property value.
+    for (const property of Object.values(person)) {
+        console.log(property);
+    }
 }
