@@ -37,3 +37,7 @@ function ques2(){
     console.log(`Actual Text is: ${message}`);
     logCharacters(message);
 }
+
+function ques3(){
+    
+}
