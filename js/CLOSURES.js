@@ -56,3 +56,7 @@ function ques3() {
     secret(); // Output: Secret Message: Hello, this is a secret!
 
 }
+
+function ques4(){
+    
+}
