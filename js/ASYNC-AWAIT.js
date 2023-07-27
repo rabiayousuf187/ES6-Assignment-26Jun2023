@@ -95,6 +95,43 @@ function ques3() {
 
 }
 
-function ques4(){
-    
+function ques4() {
+    async function fetchData(id) {
+        try {
+            console.log(`Fetching data with id ${id}...`);
+
+            // Simulate an API URL with a dynamic `id` parameter
+            const apiUrl = `https://api.example.com/data/${id}`;
+
+            // Make the actual API call using fetch and await the response
+            const response = await fetch(apiUrl);
+
+            // Check if the API call was successful
+            if (!response.ok) {
+                throw new Error("Network response was not OK");
+            }
+
+            // Parse the response body as JSON data
+            const data = await response.json();
+
+            console.log("Data fetched successfully:", data);
+            return data; // Return the data inside the resolved promise
+        } catch (error) {
+            console.error("Error fetching data:", error);
+            throw error; // Throw the error to be caught by the caller
+        }
+    }
+
+    // Example of using the fetchData function with a specific ID
+    const exampleId = 123;
+    fetchData(exampleId)
+        .then((data) => {
+            // Handle the fetched data
+            console.log("Handling the fetched data:", data);
+        })
+        .catch((error) => {
+            // Handle any errors that occurred during the fetch
+            console.error("Error in the promise chain:", error);
+        });
+
 }
