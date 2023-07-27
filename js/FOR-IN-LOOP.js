@@ -65,6 +65,15 @@ function ques4() {
 
 }
 
-function ques5(){
-    
+function ques5() {
+    // Create a Map called `scores` with keys as names and values as scores
+    const scores = new Map();
+    scores.set("John", 80);
+    scores.set("Alice", 95);
+    scores.set("Bob", 75);
+
+    // Use a for...in loop to iterate over the Map and log each name and score pair
+    for (const [name, score] of scores) {
+        console.log(`Name: ${name}, Score: ${score}`);
+    }
 }
