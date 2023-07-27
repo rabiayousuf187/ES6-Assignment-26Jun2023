@@ -52,6 +52,12 @@ function ques3() {
     }
 }
 
-// function ques5(){
+function ques5() {
+    // Create a Set called `colors` with some color names
+    const colors = new Set(['red', 'green', 'blue']);
 
-// }
+    // Use a `for...of` loop to iterate over the Set and log each color
+    for (const color of colors) {
+        console.log(color);
+    }
+}
