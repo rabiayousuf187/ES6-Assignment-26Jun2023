@@ -61,3 +61,8 @@ function ques5() {
         console.log(color);
     }
 }
+
+function ques6() {
+    // Step 1: Create an empty array
+    const myArray = [];
+}
