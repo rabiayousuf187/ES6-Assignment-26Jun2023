@@ -53,3 +53,7 @@ function ques2() {
     fetchDataAsync();
 
 }
+
+function ques3(){
+    
+}
