@@ -18,7 +18,7 @@ function ques1() {
     const myArray = ["John Doe", 30, "Engineer"];
 
     // Step 4: Using the for in loop, output the values from the array into the console
-    console.log("Array values using for in loop:");
+    console.log(`Array values using "for in" loop:`);
     for (const index in myArray) {
         console.log(myArray[index]);
     }
