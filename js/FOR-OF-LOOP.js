@@ -51,3 +51,7 @@ function ques3() {
         console.log(property);
     }
 }
+
+function ques5(){
+    
+}
