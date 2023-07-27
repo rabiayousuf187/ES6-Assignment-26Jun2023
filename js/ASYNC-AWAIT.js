@@ -196,9 +196,21 @@ function ques6() {
     // Step 3: Create an asynchronous function to output values to the console
     async function outputValues(value) {
         const result = await counterWithTimeout(value);
-        
+
         console.log("Global Counter:", result.globalCounter);
         console.log("Function Argument:", result.value);
         return result;
     }
+
+
+    // Step 4: Create a loop to iterate 10 times and call the async function
+    async function main() {
+        for (let i = 1; i <= 10; i++) {
+            const result = await outputValues(i);
+            console.log("Returned Result:", result);
+        }
+    }
+
+    // Call the main function
+    main();
 }
