@@ -19,3 +19,7 @@ function ques1() {
     incrementCounter(); // Output: Counter value: 3
 
 }
+
+function ques2(){
+    
+}
