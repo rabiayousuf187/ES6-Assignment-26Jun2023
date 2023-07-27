@@ -7,7 +7,7 @@ function ques1() {
     };
 
     // Step 2: Using the for in loop, get the properties' names and values from the object and output them into the console
-    console.log("Object properties and values using for in loop:");
+    console.log(`Object properties and values using "for in" loop:`);
     for (const key in myObject) {
         if (myObject.hasOwnProperty(key)) {
             console.log(`${key}: ${myObject[key]}`);
