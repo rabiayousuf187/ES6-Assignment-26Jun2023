@@ -57,6 +57,27 @@ function ques3() {
 
 }
 
-function ques4(){
-    
+function ques4() {
+    function calculate(num1, num2) {
+        // The num1 and num2 parameters are within the scope of the outer function
+
+        function add() {
+            return num1 + num2; // Access the num1 and num2 parameters using closures
+        }
+
+        function multiply() {
+            return num1 * num2; // Access the num1 and num2 parameters using closures
+        }
+
+        return {
+            add: add,
+            multiply: multiply,
+        };
+    }
+
+    // Example of using the calculate function
+    const calculator = calculate(5, 3);
+    console.log("Addition:", calculator.add()); // Output: Addition: 8 (5 + 3)
+    console.log("Multiplication:", calculator.multiply()); // Output: Multiplication: 15 (5 * 3)
+
 }
