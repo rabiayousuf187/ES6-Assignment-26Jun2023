@@ -86,5 +86,4 @@ function ques6() {
     for (const value of myArray) {
         console.log(value);
     }
-
 }
