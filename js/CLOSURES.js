@@ -79,5 +79,4 @@ function ques4() {
     const calculator = calculate(5, 3);
     console.log("Addition:", calculator.add()); // Output: Addition: 8 (5 + 3)
     console.log("Multiplication:", calculator.multiply()); // Output: Multiplication: 15 (5 * 3)
-
 }
