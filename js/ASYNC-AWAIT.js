@@ -186,6 +186,7 @@ function ques6() {
     function counterWithTimeout(value) {
         return new Promise((resolve) => {
             setTimeout(() => {
+               
                 globalCounter++; // Increment the global counter every second
                 resolve({ globalCounter, value });
             }, 1000);
